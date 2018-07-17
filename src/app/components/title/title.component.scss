@@ -1,0 +1,33 @@
+$background-color: #e3e3e3;
+$principal-color: #00ad90;
+$white-color: #FFF;
+$black-color: #000;
+$transparent: transparent;
+
+.title {
+  align-items: center;
+  display: flex;
+  font-family: 'OpenSans';
+  margin-bottom: 20px;
+  &__text {
+    color: 444444;
+    font-family: 'Antonio';
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px;
+    text-transform: uppercase;
+  }
+  &__export {
+    float: right;
+    button {
+      background-color: $transparent;
+      border: none;
+      color: $principal-color;
+      cursor: pointer;
+      font-size: 14px;
+      outline: none;
+      text-decoration: underline;
+      text-transform: uppercase;
+    }
+  }
+}

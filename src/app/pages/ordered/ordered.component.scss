@@ -1,0 +1,120 @@
+$background-color: #e3e3e3;
+$principal-color: #00ad90;
+$white-color: #FFF;
+$black-color: #000;
+$transparent: transparent;
+
+.container {
+  font-family: 'OpenSans';
+  .table {
+    background-color: $white-color;
+    border-radius: 3px;
+    margin: 0px;
+    thead {
+      box-shadow: 0px 0px 10px rgba($color: $black-color, $alpha: 0.1);
+      tr {
+        th {
+          border: none;
+          color: #878787;
+          font-size: 13px;
+          font-weight: 300;
+          height: 60px;
+          text-transform: uppercase;
+          vertical-align: middle;
+          .dropdown {
+            button {
+              align-items: center;
+              background-color: $transparent;
+              border: 1px solid $transparent;
+              border-radius: 5px;
+              cursor: pointer;
+              display: flex;
+              outline: none;
+              padding: 10px;
+              transition: all ease .2s;
+              &:hover {
+                border: 1px solid #e7e7e7;
+              }
+              &::after {
+                display: none;
+              }
+              input[type="checkbox"] {
+                background-color: $white-color;
+                border: 2px solid #b7b7b7;
+                border-radius: 0px;
+                height: 18px;
+                width: 18px;
+                -webkit-appearance: none;
+              }
+              img {
+                margin-left: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        border-bottom: 1px solid #e7e7e7;
+        cursor: default;
+        height: 40px;
+        transition: all ease .2s;
+        &:hover {
+          box-shadow: 0px 3px 20px rgba($color: $black-color, $alpha: 0.10)
+        }
+        td {
+          border: none;
+          color: #878787;
+          font-size: 11px;
+          vertical-align: middle;
+          // Truncate text
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-width: 185px;
+          input[type="checkbox"] {
+            background-color: $white-color;
+            border: 2px solid #b7b7b7;
+            border-radius: 0px;
+            height: 18px;
+            width: 18px;
+            -webkit-appearance: none;
+          }
+          .see {
+            background-color: #efefef;
+            border: none;
+            border-radius: 3px;
+            color: #878787;
+            cursor: pointer;
+            font-family: 'OpenSans';
+            font-size: 12px;
+            outline: none;
+            padding: 7px 12px;
+            text-transform: uppercase;
+            transition: all ease .2s;
+            &:hover {
+              background-color: #888888;
+              color: $white-color;
+              text-decoration: none;
+            }
+          }
+          .status {
+            border-radius: 3px;
+            color: $white-color;
+            display: inline-block;
+            font-size: 11px;
+            margin: 0px;
+            min-width: 80px;
+            padding: 2px 8px;
+            text-align: center;
+            text-transform: uppercase;
+            &.entregue { background-color: #06a3ca; }
+            &.transito { background-color: #f3b100; }
+            &.cancelado { background-color: #fe3b15; }
+          }
+        }
+      }
+    }
+  }
+}

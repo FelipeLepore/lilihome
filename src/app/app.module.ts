@@ -11,6 +11,8 @@ import { StockComponent } from './pages/stock/stock.component';
 import { OrderedComponent } from './pages/ordered/ordered.component';
 import { FinancialComponent } from './pages/financial/financial.component';
 import { PaymentsComponent } from './pages/payments/payments.component';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
+import { TitleComponent } from './components/title/title.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { PaymentsComponent } from './pages/payments/payments.component';
     StockComponent,
     OrderedComponent,
     FinancialComponent,
-    PaymentsComponent
+    PaymentsComponent,
+    BreadcrumbComponent,
+    TitleComponent
   ],
   imports: [
     BrowserModule,

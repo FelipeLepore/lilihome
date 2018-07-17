@@ -1,0 +1,20 @@
+$background-color: #e3e3e3;
+$principal-color: #00ad90;
+$white-color: #FFF;
+$black-color: #000;
+$transparent: transparent;
+
+.breadcrumb {
+  background-color: $transparent;
+  color: #727272;
+  font-family: 'OpenSans';
+  font-size: 12px;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  .breadcrumb-item {
+    a {
+      color: $principal-color;
+      text-decoration: underline;
+    }
+  }
+}
