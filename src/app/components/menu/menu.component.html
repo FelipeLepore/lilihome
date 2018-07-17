@@ -1,0 +1,16 @@
+<div class="menu">
+  <div class="menu__client">
+    <div class="menu__client--photo">
+      <img src="https://s2.glbimg.com/ZG5Ht8GTEnigpVOv5Wq1DmCAF_I=/600x400/smart/e.glbimg.com/og/ed/f/original/2018/04/11/screen_shot_2018-04-11_at_09.34.41.png" alt="">
+    </div>
+    <div class="menu__client--infos">
+      <p>Móveis Armil</p>
+      <p>Associado Premium</p>
+    </div>
+  </div>
+  <a class="menu__item" routerLink="{{menu.link}}" routerLinkActive="menu-active" *ngFor="let menu of menuItems">
+    <img [src]="menu.icon" alt="">
+    <img [src]="menu.iconHover" alt="" class="hover">
+    {{menu.name}}
+  </a>
+</div>
