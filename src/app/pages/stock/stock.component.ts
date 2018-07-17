@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BreadcrumbService } from '../../shared/breadcrumb.service';
 
 @Component({
   selector: 'app-stock',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StockComponent implements OnInit {
 
-  constructor() { }
+  constructor(private breadCrumb: BreadcrumbService) { }
 
   ngOnInit() {
+    this.breadCrumb.title.next('ESTOQUE');
   }
 
 }

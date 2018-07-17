@@ -1,81 +1,96 @@
-<header-component></header-component>
-<div class="container">
-  <div class="row justify-content-end">
-    <div class="col-md-offset-3 col-md-9">
-      <breadcrumb-component></breadcrumb-component>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-3">
-      <menu-component></menu-component>
-    </div>
-    <div class="col-md-9">
-      <title-component></title-component>
-      <div class="table-responsive">
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">
-                <div class="dropdown">
-                  <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <input type="checkbox" name="" id="">
-                    <img src="assets/icons/ICON_seta_combo.svg" alt="">
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                  </div>
-                </div>
-              </th>
-              <th scope="col">Pedido <img src="assets/icons/ICON_seta_baixo.svg" alt=""></th>
-              <th scope="col">Status <img src="assets/icons/ICON_seta_baixo.svg" alt=""></th>
-              <th scope="col">Entrega <img src="assets/icons/ICON_seta_baixo.svg" alt=""></th>
-              <th scope="col">Período <img src="assets/icons/ICON_seta_baixo.svg" alt=""></th>
-              <th scope="col">Localização <img src="assets/icons/ICON_seta_baixo.svg" alt=""></th>
-              <th scope="col">Distância <img src="assets/icons/ICON_seta_baixo.svg" alt=""></th>
-              <th scope="col">Total <img src="assets/icons/ICON_seta_baixo.svg" alt=""></th>
-              <th scope="col"></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><input type="checkbox" name="" id=""></td>
-              <td>21312421</td>
-              <td><p class="status entregue">Entregue</p></td>
-              <td>21 Jul 2018</td>
-              <td>19h ~ 21h</td>
-              <td data-toggle="tooltip" data-placement="top" title="Tooltip on top">Avenida Agenor de Oliveira, 718 - Guarapiranga - São Paulo, SP - Brasil</td>
-              <td>10km</td>
-              <td>R$2.500,00</td>
-              <td><button class="see">Ver</button></td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" name="" id=""></td>
-              <td>21312421</td>
-              <td><p class="status transito">Trânsito</p></td>
-              <td>21 Jul 2018</td>
-              <td>19h ~ 21h</td>
-              <td>Avenida Agenor de Oliveira, 718 - Guarapiranga - São Paulo, SP - Brasil</td>
-              <td>10km</td>
-              <td>R$2.500,00</td>
-              <td><button class="see">Ver</button></td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" name="" id=""></td>
-              <td>21312421</td>
-              <td><p class="status cancelado">Cancelado</p></td>
-              <td>21 Jul 2018</td>
-              <td>19h ~ 21h</td>
-              <td>Avenida Agenor de Oliveira, 718 - Guarapiranga - São Paulo, SP - Brasil</td>
-              <td>10km</td>
-              <td>R$2.500,00</td>
-              <td><button class="see">Ver</button></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-
-    </div>
-  </div>
+<title-component title="PEDIDOS"></title-component>
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">
+          <div class="dropdown">
+            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <input type="checkbox" name="" id="">
+              <img src="assets/icons/ICON_seta_combo.svg" alt="">
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+            </div>
+          </div>
+        </th>
+        <th scope="col">Pedido
+          <img src="assets/icons/ICON_seta_baixo.svg" alt="">
+        </th>
+        <th scope="col">Status
+          <img src="assets/icons/ICON_seta_baixo.svg" alt="">
+        </th>
+        <th scope="col">Entrega
+          <img src="assets/icons/ICON_seta_baixo.svg" alt="">
+        </th>
+        <th scope="col">Período
+          <img src="assets/icons/ICON_seta_baixo.svg" alt="">
+        </th>
+        <th scope="col">Localização
+          <img src="assets/icons/ICON_seta_baixo.svg" alt="">
+        </th>
+        <th scope="col">Distância
+          <img src="assets/icons/ICON_seta_baixo.svg" alt="">
+        </th>
+        <th scope="col">Total
+          <img src="assets/icons/ICON_seta_baixo.svg" alt="">
+        </th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <input type="checkbox" name="" id="">
+        </td>
+        <td>21312421</td>
+        <td>
+          <p class="status entregue">Entregue</p>
+        </td>
+        <td>21 Jul 2018</td>
+        <td>19h ~ 21h</td>
+        <td data-toggle="tooltip" data-placement="top" title="Tooltip on top">Avenida Agenor de Oliveira, 718 - Guarapiranga - São Paulo, SP - Brasil</td>
+        <td>10km</td>
+        <td>R$2.500,00</td>
+        <td>
+          <button class="see">Ver</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" name="" id="">
+        </td>
+        <td>21312421</td>
+        <td>
+          <p class="status transito">Trânsito</p>
+        </td>
+        <td>21 Jul 2018</td>
+        <td>19h ~ 21h</td>
+        <td>Avenida Agenor de Oliveira, 718 - Guarapiranga - São Paulo, SP - Brasil</td>
+        <td>10km</td>
+        <td>R$2.500,00</td>
+        <td>
+          <button class="see">Ver</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" name="" id="">
+        </td>
+        <td>21312421</td>
+        <td>
+          <p class="status cancelado">Cancelado</p>
+        </td>
+        <td>21 Jul 2018</td>
+        <td>19h ~ 21h</td>
+        <td>Avenida Agenor de Oliveira, 718 - Guarapiranga - São Paulo, SP - Brasil</td>
+        <td>10km</td>
+        <td>R$2.500,00</td>
+        <td>
+          <button class="see">Ver</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
