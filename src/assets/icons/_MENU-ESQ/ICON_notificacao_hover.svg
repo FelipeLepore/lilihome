@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="24" viewBox="0 0 20 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0fb297;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="21" y="475" width="20" height="24" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#eee"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="ICON_notificacao_hover.svg" class="cls-1" d="M34,496a3.066,3.066,0,0,1-2.971,3A3.118,3.118,0,0,1,28,496h6Zm0.137-17.055a2.1,2.1,0,0,1-1.041-1.82v0a2.1,2.1,0,1,0-4.193,0v0a2.1,2.1,0,0,1-1.041,1.82c-4.668,2.709-1.985,11.715-6.862,13.306V494H41v-1.749C36.123,490.66,38.807,481.653,34.137,478.945ZM31,476a1,1,0,1,1-1,1A1,1,0,0,1,31,476Zm-6.451,16a14.62,14.62,0,0,0,1.964-5.815c0.447-2.39.869-4.648,2.354-5.509a4.18,4.18,0,0,1,4.267,0c1.485,0.861,1.907,3.119,2.354,5.509A14.62,14.62,0,0,0,37.452,492h-12.9Z" transform="translate(-21 -475)"/>
+</svg>

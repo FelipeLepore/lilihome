@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="9" height="1" viewBox="0 0 9 1">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00ad90;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="ICON_minus.svg" class="cls-1" d="M6245.99,2428h9v1h-9v-1Z" transform="translate(-6246 -2428)"/>
+</svg>

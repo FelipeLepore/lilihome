@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 20 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d3d3d3;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="ICON_arquivo_png.svg" class="cls-1" d="M16418,4968v5h5v15h-16v-20h11Zm1-2h-14v24h20v-18Z" transform="translate(-16405 -4966)"/>
+</svg>

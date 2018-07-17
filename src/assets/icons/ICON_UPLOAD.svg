@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="31.18" height="34.38" viewBox="0 0 31.18 34.38">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b1b1b1;
+        fill-rule: evenodd;
+        opacity: 0.5;
+      }
+    </style>
+  </defs>
+  <path id="ICON_upload.svg" class="cls-1" d="M1208.1,3694.3v28.67h-11.35v-2.87h8.51v-22.93h-25.53v22.93h8.51v2.87H1176.9V3694.3h31.2Zm-17.02,18.63h-5.67l7.09-8.6,7.09,8.6h-5.67v15.77h-2.84v-15.77Z" transform="translate(-1176.91 -3694.31)"/>
+</svg>

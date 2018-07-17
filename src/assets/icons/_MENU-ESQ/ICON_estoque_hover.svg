@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="24" viewBox="0 0 22 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0fb297;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="20" y="416" width="22" height="24" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#eee"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="ICON_estoque_hover.svg" class="cls-1" d="M31,416l-11,6v12.131L31,440l11-5.869V422.065Zm7.91,6.646-7.9,4.218-7.872-4.294L31,418.281ZM22,424.23l8,4.363V437.2l-8-4.268v-8.7ZM32,437.2v-8.6l8-4.269v8.6Z" transform="translate(-20 -416)"/>
+</svg>

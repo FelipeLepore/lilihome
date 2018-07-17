@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="13.34" viewBox="0 0 16 13.34">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #efefef;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="ICON_sair_hover.svg" class="cls-1" d="M1505.66,2256.33V2253l5.34,4.67-5.34,4.66V2259h-5.33v-2.67h5.33ZM1495,2251v13.33h9.33V2263h-8v-10.67h8V2251H1495Z" transform="translate(-1495 -2251)"/>
+</svg>

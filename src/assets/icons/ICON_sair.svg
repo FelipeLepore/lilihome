@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="13.34" viewBox="0 0 16 13.34">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #878787;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="ICON_sair.svg" class="cls-1" d="M14974.7,2154.33V2151l5.3,4.67-5.3,4.66V2157h-5.4v-2.67h5.4ZM14964,2149v13.33h9.3V2161h-8v-10.67h8V2149h-9.3Z" transform="translate(-14964 -2149)"/>
+</svg>

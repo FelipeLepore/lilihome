@@ -1,0 +1,16 @@
+<svg id="ICON_add_produto_hover.svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0fb297;
+      }
+
+      .cls-2 {
+        fill: #eee;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="ICON_add" class="cls-1" cx="12" cy="12" r="12"/>
+  <path class="cls-2" d="M30,126h2v14H30V126Zm-6,6H38v2H24v-2Z" transform="translate(-19 -121)"/>
+</svg>

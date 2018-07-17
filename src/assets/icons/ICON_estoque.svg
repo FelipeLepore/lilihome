@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 22 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0fb297;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="ICON_estoque.svg" class="cls-1" d="M746,2527l-11,6v12.13l11,5.87,11-5.87v-12.07Zm7.911,6.65L746,2537.86l-7.872-4.29,7.862-4.29ZM737,2535.23l8,4.36v8.61l-8-4.27v-8.7Zm10,12.97v-8.6l8-4.27v8.6Z" transform="translate(-735 -2527)"/>
+</svg>

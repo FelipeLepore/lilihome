@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+$background-color: #e3e3e3;
+
+body {
+  background-color: $background-color;
+}
+
+@font-face {
+  font-family: 'Antonio';
+  src: url('assets/fonts/Antonio-Light.ttf'),
+       url('assets/fonts/Antonio-Regular.ttf'),
+       url('assets/fonts/Antonio-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('assets/fonts/OpenSans-Regular.ttf'),
+       url('assets/fonts/OpenSans-Bold.ttf'),
+       url('assets/fonts/OpenSans-BoldItalic.ttf'),
+       url('assets/fonts/OpenSans-ExtraBold.ttf'),
+       url('assets/fonts/OpenSans-ExtraBoldItalic.ttf'),
+       url('assets/fonts/OpenSans-Italic.ttf'),
+       url('assets/fonts/OpenSans-Light.ttf'),
+       url('assets/fonts/OpenSans-LightItalic.ttf'),
+       url('assets/fonts/OpenSans-SemiBold.ttf'),
+       url('assets/fonts/OpenSans-SemiBoldItalic.ttf');
+}
