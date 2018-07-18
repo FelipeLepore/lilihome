@@ -1,1 +1,72 @@
 <title-component title="FINANCEIRO"></title-component>
+<div class="card">
+  <div class="card__body">
+    <div class="card__body--title">
+      <h3>Geração de Relatórios</h3>
+    </div>
+    <form>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card__body--formgroup">
+            <label>Nome fantasia</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="col-md-12 mb-2">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck1" checked>
+              <label class="form-check-label" for="gridCheck1">
+                Transações consolidadas
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">
+                Transações não consolidadas
+              </label>
+            </div>
+          </div>
+          <div class="col-md-12 d-flex mt-2">
+            <button type="button" class="button-address">Filtrar</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">
+          <div class="dropdown">
+            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <input type="checkbox" name="" id="">
+              <img src="assets/icons/ICON_seta_combo.svg" alt="">
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+            </div>
+          </div>
+        </th>
+        <th scope="col">Nr. Pedidos <img src="assets/icons/ICON_seta_baixo.svg" alt=""></th>
+        <th scope="col">Vencimento <img src="assets/icons/ICON_seta_baixo.svg" alt=""></th>
+        <th scope="col">Consolidado <img src="assets/icons/ICON_seta_baixo.svg" alt=""></th>
+        <th scope="col">Valor a ser pago <img src="assets/icons/ICON_seta_baixo.svg" alt=""></th>
+        <th scope="col">Status <img src="assets/icons/ICON_seta_baixo.svg" alt=""></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="checkbox" name="" id=""></td>
+        <td>120</td>
+        <td>21 Jan 2018</td>
+        <td>30 Jan 2018</td>
+        <td>R$2.500,00</td>
+        <td><p class="status pago">Pago</p></td>
+        <td><button class="see">Ver</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

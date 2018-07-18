@@ -1,2 +1,8 @@
 @import '../../../variables.scss';
 @import '../../../mixins.scss';
+
+.card {
+  &__body {
+    padding-bottom: 15px;
+  }
+}
