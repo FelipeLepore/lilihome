@@ -4,9 +4,10 @@
 .title {
   font-family: 'OpenSans';
   margin-bottom: 20px;
-  @include centralizedFlex(center);
+  overflow: hidden;
   &__text {
     color: #444444;
+    float: left;
     font-family: 'Antonio';
     font-size: 30px;
     font-weight: bold;
@@ -24,6 +25,52 @@
       outline: none;
       text-decoration: underline;
       text-transform: uppercase;
+    }
+  }
+  &__filters {
+    float: right;
+    @include centralizedFlex(center);
+    label {
+      color: #878787;
+      font-size: 11px;
+      margin: 0px;
+      margin-right: 8px;
+      text-transform: uppercase;
+      &.search-label {
+        margin-left: 20px;
+        swidth: 250px;
+      }
+    }
+    .form-group {
+      margin: 0px;
+    }
+    .search {
+      position: relative;
+      &:before {
+        background-color: $transparent;
+        background-image: url('../../../assets/icons/ICON_search.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 18px;
+        bottom: 0;
+        content: '';
+        height: 100%;
+        position: absolute;
+        right: 10px;
+        top: 0;
+        width: 18px;
+      }
+      input {
+        padding-right: 35px;
+      }
+    }
+    input, select {
+      background-color: #fafafa!important;
+      color: #888888;
+      font-size: 12px;
+    }
+    select {
+      min-width: 60px;
     }
   }
 }

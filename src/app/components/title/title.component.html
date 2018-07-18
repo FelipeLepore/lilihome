@@ -3,10 +3,20 @@
   <div class="title__export" *ngIf="showExportBtn == true">
     <button type="button">Exportar</button>
   </div>
-  <!-- <div class="title__filters">
-    <p>Ver</p>
-    <input type="text">
-    <p>Produtos por página</p>
-    <input type="text">
-  </div> -->
+  <div class="title__filters" *ngIf="showFilters == true">
+    <label>Ver</label>
+    <div class="form-group">
+      <select class="custom-select" required>
+        <option value=""></option>
+        <option value="1">5</option>
+        <option value="2">10</option>
+        <option value="3">25</option>
+      </select>
+      <div class="invalid-feedback">Example invalid custom select feedback</div>
+    </div>
+    <label class="search-label">Produtos por página</label>
+    <div class="search">
+      <input type="text" class="form-control">
+    </div>
+  </div>
 </div>

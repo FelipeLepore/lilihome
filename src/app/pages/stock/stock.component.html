@@ -1,4 +1,4 @@
-<title-component title="ESTOQUE"></title-component>
+<title-component title="ESTOQUE" [showFilters]="true"></title-component>
 <div class="table-responsive">
   <table class="table">
     <thead>
@@ -39,7 +39,47 @@
           <input type="checkbox" name="" id="">
         </td>
         <td>
-          <input type="radio">
+          <ngx-toggle
+            onColor="{{model.onColor}}"
+            onText="{{model.onText}}"
+            offColor="{{model.offColor}}"
+            offText="{{model.offText}}"
+            [disabled]="model.disabled"
+            [size]="model.size"
+            [(value)]="model.value">
+          </ngx-toggle>
+        </td>
+        <td>1234</td>
+        <td>
+          <div class="product">
+            <div class="product__image">
+              <img src="http://marcheartdevie.com.br/shop/6102-large_default/CADEIRA-MACCHIATO.jpg" alt="">
+            </div>
+            <div class="product__name">
+              Lorem ipsum dolor sit amet
+            </div>
+          </div>
+        </td>
+        <td>2</td>
+        <td>R$2.500,00</td>
+        <td>
+          <button class="see">Ver</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" name="" id="">
+        </td>
+        <td>
+          <ngx-toggle
+            onColor="{{model.onColor}}"
+            onText="{{model.onText}}"
+            offColor="{{model.offColor}}"
+            offText="{{model.offText}}"
+            [disabled]="model.disabled"
+            [size]="model.size"
+            [(value)]="model.value">
+          </ngx-toggle>
         </td>
         <td>1234</td>
         <td>

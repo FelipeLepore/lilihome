@@ -9,6 +9,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class TitleComponent implements OnInit {
   @Input() title: string;
   @Input() showExportBtn: boolean = false;
+  @Input() showFilters: boolean = false;
 
   constructor() { }
 

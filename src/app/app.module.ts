@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { NgxToggleModule } from "ngx-toggle";
 import { HomeComponent } from './pages/home/home.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { MenuComponent } from './components/menu/menu.component';
@@ -30,7 +31,8 @@ import { TitleComponent } from './components/title/title.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
