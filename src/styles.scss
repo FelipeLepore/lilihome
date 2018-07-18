@@ -383,3 +383,54 @@ input[type="checkbox"] {
     }
   }
 }
+
+.nav {
+  &.nav-pills {
+    .nav-item {
+      a {
+        background-color: #dcd9d9;
+        border-radius: $border-radius-default;
+        min-width: 120px;
+        padding: 20px;
+        position: relative;
+        p {
+          color: #878787;
+          font-size: 12px;
+          margin: 0px;
+          text-align: center;
+          text-transform: uppercase;
+        }
+        h3 {
+          color: $principal-color;
+          font-family: 'Antonio';
+          font-size: 50px;
+          font-weight: bold;
+          margin: 0px;
+          text-align: center;
+        }
+        &[aria-selected="true"] {
+          background-color: $principal-color;
+          p {
+            color: #00efc7;
+          }
+          h3 {
+            color: $white-color;
+          }
+          &:before {
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid $principal-color;
+            bottom: -10px;
+            content: '';
+            height: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            width: 0;
+          }
+        }
+      }
+    }
+  }
+}

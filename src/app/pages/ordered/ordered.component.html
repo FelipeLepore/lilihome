@@ -1,110 +1,137 @@
 <title-component title="PEDIDOS"></title-component>
-<div class="table-responsive">
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">
-          <div class="dropdown">
-            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+      <p>Abertos</p>
+      <h3>24</h3>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+      <p>Pendentes</p>
+      <h3>20</h3>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
+      <p>Cancelados</p>
+      <h3>17</h3>
+    </a>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">
+              <div class="dropdown">
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <input type="checkbox" name="" id="">
+                  <img src="assets/icons/ICON_seta_combo.svg" alt="">
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Exportar seleção para PDF</a>
+                  <a class="dropdown-item" href="#">Exportar seleção para Excel</a>
+                </div>
+              </div>
+            </th>
+            <th scope="col">
+              <div class="filter">
+                Pedido <img src="assets/icons/ICON_seta_baixo.svg" alt="">
+              </div>
+            </th>
+            <th scope="col">
+              <div class="filter">
+                Status <img src="assets/icons/ICON_seta_baixo.svg" alt="">
+              </div>
+            </th>
+            <th scope="col">
+              <div class="filter">
+                Entrega <img src="assets/icons/ICON_seta_baixo.svg" alt="">
+              </div>
+            </th>
+            <th scope="col">
+              <div class="filter">
+                Período <img src="assets/icons/ICON_seta_baixo.svg" alt="">
+              </div>
+            </th>
+            <th scope="col">
+              <div class="filter">
+                Localização <img src="assets/icons/ICON_seta_baixo.svg" alt="">
+              </div>
+            </th>
+            <th scope="col">
+              <div class="filter">
+                Distância <img src="assets/icons/ICON_seta_baixo.svg" alt="">
+              </div>
+            </th>
+            <th scope="col">
+              <div class="filter">
+                Total <img src="assets/icons/ICON_seta_baixo.svg" alt="">
+              </div>
+            </th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
               <input type="checkbox" name="" id="">
-              <img src="assets/icons/ICON_seta_combo.svg" alt="">
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Exportar seleção para PDF</a>
-              <a class="dropdown-item" href="#">Exportar seleção para Excel</a>
-            </div>
-          </div>
-        </th>
-        <th scope="col">
-          <div class="filter">
-            Pedido <img src="assets/icons/ICON_seta_baixo.svg" alt="">
-          </div>
-        </th>
-        <th scope="col">
-          <div class="filter">
-            Status <img src="assets/icons/ICON_seta_baixo.svg" alt="">
-          </div>
-        </th>
-        <th scope="col">
-          <div class="filter">
-            Entrega <img src="assets/icons/ICON_seta_baixo.svg" alt="">
-          </div>
-        </th>
-        <th scope="col">
-          <div class="filter">
-            Período <img src="assets/icons/ICON_seta_baixo.svg" alt="">
-          </div>
-        </th>
-        <th scope="col">
-          <div class="filter">
-            Localização <img src="assets/icons/ICON_seta_baixo.svg" alt="">
-          </div>
-        </th>
-        <th scope="col">
-          <div class="filter">
-            Distância <img src="assets/icons/ICON_seta_baixo.svg" alt="">
-          </div>
-        </th>
-        <th scope="col">
-          <div class="filter">
-            Total <img src="assets/icons/ICON_seta_baixo.svg" alt="">
-          </div>
-        </th>
-        <th scope="col"></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <input type="checkbox" name="" id="">
-        </td>
-        <td>21312421</td>
-        <td>
-          <p class="status entregue">Entregue</p>
-        </td>
-        <td>21 Jul 2018</td>
-        <td>19h ~ 21h</td>
-        <td data-toggle="tooltip" data-placement="top" title="Tooltip on top">Avenida Agenor de Oliveira, 718 - Guarapiranga - São Paulo, SP - Brasil</td>
-        <td>10km</td>
-        <td>R$2.500,00</td>
-        <td>
-          <button class="see">Ver</button>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <input type="checkbox" name="" id="">
-        </td>
-        <td>21312421</td>
-        <td>
-          <p class="status transito">Trânsito</p>
-        </td>
-        <td>21 Jul 2018</td>
-        <td>19h ~ 21h</td>
-        <td>Avenida Agenor de Oliveira, 718 - Guarapiranga - São Paulo, SP - Brasil</td>
-        <td>10km</td>
-        <td>R$2.500,00</td>
-        <td>
-          <button class="see">Ver</button>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <input type="checkbox" name="" id="">
-        </td>
-        <td>21312421</td>
-        <td>
-          <p class="status cancelado">Cancelado</p>
-        </td>
-        <td>21 Jul 2018</td>
-        <td>19h ~ 21h</td>
-        <td>Avenida Agenor de Oliveira, 718 - Guarapiranga - São Paulo, SP - Brasil</td>
-        <td>10km</td>
-        <td>R$2.500,00</td>
-        <td>
-          <button class="see">Ver</button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+            </td>
+            <td>21312421</td>
+            <td>
+              <p class="status entregue">Entregue</p>
+            </td>
+            <td>21 Jul 2018</td>
+            <td>19h ~ 21h</td>
+            <td data-toggle="tooltip" data-placement="top" title="Tooltip on top">Avenida Agenor de Oliveira, 718 - Guarapiranga - São Paulo, SP - Brasil</td>
+            <td>10km</td>
+            <td>R$2.500,00</td>
+            <td>
+              <button class="see">Ver</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" name="" id="">
+            </td>
+            <td>21312421</td>
+            <td>
+              <p class="status transito">Trânsito</p>
+            </td>
+            <td>21 Jul 2018</td>
+            <td>19h ~ 21h</td>
+            <td>Avenida Agenor de Oliveira, 718 - Guarapiranga - São Paulo, SP - Brasil</td>
+            <td>10km</td>
+            <td>R$2.500,00</td>
+            <td>
+              <button class="see">Ver</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" name="" id="">
+            </td>
+            <td>21312421</td>
+            <td>
+              <p class="status cancelado">Cancelado</p>
+            </td>
+            <td>21 Jul 2018</td>
+            <td>19h ~ 21h</td>
+            <td>Avenida Agenor de Oliveira, 718 - Guarapiranga - São Paulo, SP - Brasil</td>
+            <td>10km</td>
+            <td>R$2.500,00</td>
+            <td>
+              <button class="see">Ver</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">2</div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">3</div>
 </div>
