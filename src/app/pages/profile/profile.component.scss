@@ -1,13 +1,10 @@
-$background-color: #e3e3e3;
-$principal-color: #00ad90;
-$white-color: #FFF;
-$black-color: #000;
-$transparent: transparent;
+@import '../../../variables.scss';
+@import '../../../mixins.scss';
 
 .card {
   background-color: #fafafa;
   border: none;
-  border-radius: 3px;
+  border-radius: $border-radius-default;
   margin-bottom: 20px;
   &__body {
     padding: 15px;
@@ -65,17 +62,13 @@ $transparent: transparent;
       }
     }
     &--changepic {
-      align-items: center;
-      display: flex;
-      justify-content: center;
+      @include centralizedFlex(center, center);
       .photo {
-        border-radius: 50%;
+        border-radius: $border-rounded;
         height: 85px;
         overflow: hidden;
         width: 85px;
-        align-items: center;
-        display: flex;
-        justify-content: center;
+        @include centralizedFlex(center, center);
         img {
           width: 200%;
         }
@@ -83,7 +76,7 @@ $transparent: transparent;
       button {
         background-color: $principal-color;
         border: none;
-        border-radius: 3px;
+        border-radius: $border-radius-default;
         color: $white-color;
         cursor: pointer;
         font-size: 12px;
@@ -124,7 +117,7 @@ $transparent: transparent;
     .button-address {
       background-color: $principal-color;
       border: none;
-      border-radius: 3px;
+      border-radius: $border-radius-default;
       color: $white-color;
       cursor: pointer;
       font-size: 12px;
@@ -133,8 +126,7 @@ $transparent: transparent;
       padding: 8px 20px;
     }
     .form-check {
-      display: flex;
-      align-items: center;
+      @include centralizedFlex(center);
       .form-check-label {
         color: #888888;
         font-size: 12px;

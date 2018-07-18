@@ -1,32 +1,24 @@
-$background-color: #e3e3e3;
-$principal-color: #00ad90;
-$white-color: #FFF;
-$black-color: #000;
-$transparent: transparent;
+@import '../../../variables.scss';
+@import '../../../mixins.scss';
 
 .menu {
   background-color: #fafafa;
   &__client {
-    align-items: center;
-    display: flex;
-    justify-content: center;
     min-height: 100px;
+    @include centralizedFlex(center, center);
     &--photo {
-      border-radius: 50%;
+      border-radius: $border-rounded;
       height: 55px;
       margin-right: 10px;
       overflow: hidden;
       width: 55px;
-      align-items: center;
-      display: flex;
-      justify-content: center;
+      @include centralizedFlex(center, center);
       img {
         width: 200%;
       }
     }
     &--infos {
-      display: flex;
-      flex-direction: column;
+      @include centralizedFlex(inherit, inherit, column);
       p {
         margin: 0px;
         &:nth-child(1) {
@@ -45,11 +37,9 @@ $transparent: transparent;
     }
   }
   &__item {
-    align-items: center;
     background-color: #eeeeee;
     border-bottom: 1px solid #d4d4d4;
     color: #878787;
-    display: flex;
     font-family: 'Antonio';
     font-size: 20px;
     height: 60px;
@@ -58,6 +48,7 @@ $transparent: transparent;
     text-decoration: none;
     transition: all ease .2s;
     width: 100%;
+    @include centralizedFlex(center);
     img {
       margin-right: 30px;
       &.hover {

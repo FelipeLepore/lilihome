@@ -1,0 +1,115 @@
+/*
+	Mixin of background
+*/
+@mixin backgroundImage($imgpath, $repeat, $position, $size, $color) {
+	background: {
+		image: url($imgpath);
+		position: $position;
+		repeat: $repeat;
+		size: $size;
+		color: $color;
+	}
+}
+
+
+/*
+	Mixin of linearGradient
+*/
+@mixin linearGradient($args...) {
+	background-image: -o-linear-gradient($args);
+	background-image: -moz-linear-gradient($args);
+	background-image: -webkit-linear-gradient($args);
+	background-image: linear-gradient($args);
+}
+
+@mixin centralizedFlex($ai: stretch, $jc: stretch, $fd: row) {
+	// display-flex: $df
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+	display: flex;
+	
+	// align-items: $ai
+	@if $ai == flex-start {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+  } @else if $ai == flex-end {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+  } @else {
+    -webkit-box-align: $ai;
+    -ms-flex-align: $ai;
+  }
+  -webkit-align-items: $ai;
+  -moz-align-items: $ai;
+	align-items: $ai;
+	
+	// justify-content: $jc
+  @if $jc == flex-start {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+  } @else if $jc == flex-end {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+  } @else if $jc == space-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+  } @else {
+    -webkit-box-pack: $jc;
+    -ms-flex-pack: $jc;
+  }
+  -webkit-justify-content: $jc;
+  -moz-justify-content: $jc;
+	justify-content: $jc;
+	
+	// flex-direction: $fd
+	@if $fd == row-reverse {
+		-webkit-box-direction: reverse;
+		-webkit-box-orient: horizontal;
+	} @else if $fd == column {
+		-webkit-box-direction: normal;
+		-webkit-box-orient: vertical;
+	} @else if $fd == column-reverse {
+		-webkit-box-direction: reverse;
+		-webkit-box-orient: vertical;
+	} @else {
+		-webkit-box-direction: normal;
+		-webkit-box-orient: horizontal;
+	}
+	-webkit-flex-direction: $fd;
+	-moz-flex-direction: $fd;
+	-ms-flex-direction: $fd;
+	flex-direction: $fd;
+}
+
+/*
+	Mixin from truncate words
+*/
+@mixin truncate() { //$truncate-value
+	// max-width: $truncate-value;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+@mixin truncateWithMaxHeight($truncate-value) {
+	max-height: $truncate-value;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+@mixin notruncate() {
+	white-space: initial;
+	overflow: initial;
+	text-overflow: initial;
+}
+/*
+Mixin for placeholders style
+*/
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}

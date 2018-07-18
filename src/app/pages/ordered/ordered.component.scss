@@ -1,14 +1,11 @@
-$background-color: #e3e3e3;
-$principal-color: #00ad90;
-$white-color: #FFF;
-$black-color: #000;
-$transparent: transparent;
+@import '../../../variables.scss';
+@import '../../../mixins.scss';
 
 .container {
   font-family: 'OpenSans';
   .table {
     background-color: $white-color;
-    border-radius: 3px;
+    border-radius: $border-radius-default;
     margin: 0px;
     thead {
       box-shadow: 0px 0px 10px rgba($color: $black-color, $alpha: 0.1);
@@ -23,15 +20,14 @@ $transparent: transparent;
           vertical-align: middle;
           .dropdown {
             button {
-              align-items: center;
               background-color: $transparent;
               border: 1px solid $transparent;
               border-radius: 5px;
               cursor: pointer;
-              display: flex;
               outline: none;
               padding: 10px;
               transition: all ease .2s;
+              @include centralizedFlex(center);
               &:hover {
                 border: 1px solid #e7e7e7;
               }
@@ -60,15 +56,11 @@ $transparent: transparent;
           color: #878787;
           font-size: 11px;
           vertical-align: middle;
-          // Truncate text
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          max-width: 185px;
+          @include truncateWithMaxHeight(185px);
           .see {
             background-color: #efefef;
             border: none;
-            border-radius: 3px;
+            border-radius: $border-radius-default;
             color: #878787;
             cursor: pointer;
             font-family: 'OpenSans';
@@ -84,7 +76,7 @@ $transparent: transparent;
             }
           }
           .status {
-            border-radius: 3px;
+            border-radius: $border-radius-default;
             color: $white-color;
             display: inline-block;
             font-size: 11px;
@@ -93,9 +85,9 @@ $transparent: transparent;
             padding: 2px 8px;
             text-align: center;
             text-transform: uppercase;
-            &.entregue { background-color: #06a3ca; }
-            &.transito { background-color: #f3b100; }
-            &.cancelado { background-color: #fe3b15; }
+            &.entregue { background-color: $entregue-color; }
+            &.transito { background-color: $transito-color; }
+            &.cancelado { background-color: $cancelado-color; }
           }
         }
       }
