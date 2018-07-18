@@ -97,7 +97,15 @@
             <div class="col-md-12">
               <div class="card__body--formgroup">
                 <label>Banco</label>
-                <input type="number" class="form-control">
+                <div class="form-group">
+                  <select class="custom-select" required>
+                    <option value=""></option>
+                    <option value="1">Itaú</option>
+                    <option value="2">Santander</option>
+                    <option value="3">Nubank</option>
+                  </select>
+                  <div class="invalid-feedback">Example invalid custom select feedback</div>
+                </div>
               </div>
             </div>
             <div class="col-md-3">
@@ -115,7 +123,14 @@
             <div class="col-md-6">
               <div class="card__body--formgroup">
                 <label>Tipo de conta</label>
-                <input type="email" class="form-control">
+                <div class="form-group">
+                  <select class="custom-select" required>
+                    <option value=""></option>
+                    <option value="1">Corrente</option>
+                    <option value="2">Poupança</option>
+                  </select>
+                  <div class="invalid-feedback">Example invalid custom select feedback</div>
+                </div>
               </div>
             </div>
           </div>
@@ -174,9 +189,9 @@
                 <p>Endereço</p>
               </div>
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12 mb-2">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                <input class="form-check-input" type="checkbox" id="gridCheck1" checked>
                 <label class="form-check-label" for="gridCheck1">
                   Example checkbox
                 </label>
@@ -203,13 +218,21 @@
             <div class="col-md-5">
               <div class="card__body--formgroup">
                 <label>Cidade</label>
-                <input type="number" class="form-control">
+                <input type="text" class="form-control">
               </div>
             </div>
             <div class="col-md-2">
               <div class="card__body--formgroup">
                 <label>Estado</label>
-                <input type="email" class="form-control">
+                <div class="form-group">
+                  <select class="custom-select" required>
+                    <option value=""></option>
+                    <option value="1">SP</option>
+                    <option value="2">RJ</option>
+                    <option value="3">MG</option>
+                  </select>
+                  <div class="invalid-feedback">Example invalid custom select feedback</div>
+                </div>
               </div>
             </div>
             <div class="col-md-12 d-flex mt-2">

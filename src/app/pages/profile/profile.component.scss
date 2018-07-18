@@ -19,7 +19,7 @@ $transparent: transparent;
       h3 {
         color: #444444;
         font-family: 'Antonio';
-        font-size: 20px;
+        font-size: 18px;
         font-weight: bold;
         margin: 0px;
         text-align: center;
@@ -89,8 +89,7 @@ $transparent: transparent;
         font-size: 12px;
         margin-left: 10px;
         outline: none;
-        padding: 8px 15px;
-        text-transform: uppercase;
+        padding: 8px 20px;
       }
     }
     &--formgroup {
@@ -100,13 +99,10 @@ $transparent: transparent;
         font-size: 11px;
         text-transform: uppercase;
       }
-      input {
+      input, select {
         background-color: $transparent;
-        border: 1px solid #e8e8e8;
-        border-radius: 3px;
         color: #888888;
         font-size: 12px;
-        height: 40px;
       }
     }
     &--button {
@@ -115,7 +111,8 @@ $transparent: transparent;
       bottom: 0;
       color: #444444;
       cursor: pointer;
-      font-size: 14px;
+      font-size: 12px;
+      font-weight: 500;
       height: 50px;
       left: 0;
       outline: none;
@@ -133,8 +130,17 @@ $transparent: transparent;
       font-size: 12px;
       margin: auto;
       outline: none;
-      padding: 8px 15px;
-      text-transform: uppercase;
+      padding: 8px 20px;
+    }
+    .form-check {
+      display: flex;
+      align-items: center;
+      .form-check-label {
+        color: #888888;
+        font-size: 12px;
+        margin-top: 3px;
+        margin-left: 8px;
+      }
     }
   }
 }
