@@ -1,6 +1,6 @@
 <div class="title">
   <h3 class="title__text">{{title}}</h3>
-  <div class="title__export">
+  <div class="title__export" *ngIf="showExportBtn == true">
     <button type="button">Exportar</button>
   </div>
   <!-- <div class="title__filters">
