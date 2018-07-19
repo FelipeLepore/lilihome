@@ -1,1 +1,79 @@
-<title-component title="PAGAMENTOS"></title-component>
+<title-component title="Débitos"></title-component>
+
+<ul class="nav nav-pills mb-3 row" id="pills-tab" role="tablist">
+  <li class="nav-item col-md-4">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+      <p>Comissões em aberto</p>
+      <h3>04</h3>
+    </a>
+  </li>
+  <li class="nav-item col-md-4">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+      <p>Mensalidades pendentes</p>
+      <h3>01</h3>
+    </a>
+  </li>
+</ul>
+
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">
+              <div class="dropdown">
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <input type="checkbox" name="" id="">
+                  <img src="assets/icons/ICON_seta_combo.svg" alt="">
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Exportar seleção para PDF</a>
+                  <a class="dropdown-item" href="#">Exportar seleção para Excel</a>
+                </div>
+              </div>
+            </th>
+            <th scope="col">
+              <div class="filter">
+                Nr. Pedidos <img src="assets/icons/ICON_seta_baixo.svg" alt="">
+              </div>
+            </th>
+            <th scope="col">
+              <div class="filter">
+                Vencimento <img src="assets/icons/ICON_seta_baixo.svg" alt="">
+              </div>
+            </th>
+            <th scope="col">
+              <div class="filter">
+                Consolidado <img src="assets/icons/ICON_seta_baixo.svg" alt="">
+              </div>
+            </th>
+            <th scope="col">
+              <div class="filter">
+                Valor a ser pago <img src="assets/icons/ICON_seta_baixo.svg" alt="">
+              </div>
+            </th>
+            <th scope="col">
+              <div class="filter">
+                Status <img src="assets/icons/ICON_seta_baixo.svg" alt="">
+              </div>
+            </th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="checkbox" name="" id=""></td>
+            <td>120</td>
+            <td>21 Jan 2018</td>
+            <td>30 Jan 2018</td>
+            <td>R$2.500,00</td>
+            <td><p class="status entregue">Entregue</p></td>
+            <td><button class="see">Ver</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">2</div>
+</div>

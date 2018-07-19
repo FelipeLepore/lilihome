@@ -11,7 +11,7 @@ export class PaymentsComponent implements OnInit {
   constructor(private breadCrumb: BreadcrumbService) { }
 
   ngOnInit() {
-    this.breadCrumb.title.next('PAGAMENTOS');
+    this.breadCrumb.title.next('DÉBITOS');
   }
 
 }
