@@ -2,8 +2,8 @@
 @import '../../../mixins.scss';
 
 .card {
+  background-color: #fafafa;
   &__body {
-    background-color: #fafafa;
     &.reset-pb { padding-bottom: 15px; }
     // Best sellers card
     &--list-products {
@@ -138,11 +138,15 @@
   }
   &.and-table {
     .card-body {
-      padding: 0px;
+      padding: 20px;
       padding-bottom: 50px;
       .table {
         tbody {
           tr {
+            border: none;
+            &:hover {
+              box-shadow: initial;
+            }
             td {
               .flag {
                 color: $principal-color;
@@ -176,10 +180,16 @@
                 border: 1px solid $principal-color;
                 border-radius: $border-radius-default;
                 color: $principal-color;
+                cursor: pointer;
                 font-size: 12px;
                 outline: none;
                 padding: 10px 20px;
                 text-transform: uppercase;
+                transition: all ease .2s;
+                &:hover {
+                  background-color: $principal-color;
+                  color: $white-color;
+                }
               }
             }
           }

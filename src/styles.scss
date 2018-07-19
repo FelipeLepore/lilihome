@@ -396,6 +396,15 @@ input[type="checkbox"] {
         min-width: 120px;
         padding: 20px;
         position: relative;
+        &:after {
+          background-color: #b2b0b0;
+          bottom: 20%;
+          content: '';
+          position: absolute;
+          right: 0;
+          top: 20%;
+          width: 1px;
+        }
         p {
           color: #878787;
           font-size: 14px;
