@@ -14,6 +14,7 @@ import { FinancialComponent } from './pages/financial/financial.component';
 import { PaymentsComponent } from './pages/payments/payments.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { TitleComponent } from './components/title/title.component';
+import { OrderDetailsComponent } from './pages/ordered/order-details/order-details.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { TitleComponent } from './components/title/title.component';
     FinancialComponent,
     PaymentsComponent,
     BreadcrumbComponent,
-    TitleComponent
+    TitleComponent,
+    OrderDetailsComponent
   ],
   imports: [
     BrowserModule,
