@@ -325,10 +325,16 @@ input[type="checkbox"] {
         font-size: 11px;
         text-transform: uppercase;
       }
-      input, select {
+      input, select, textarea {
         background-color: $transparent;
         color: #888888;
         font-size: 12px;
+      }
+      textarea {
+        border: 1px solid #ced4da;
+        border-radius: $border-radius-default;
+        padding: 10px 20px;
+        width: 100%;
       }
     }
     &--button {
@@ -447,5 +453,20 @@ input[type="checkbox"] {
         }
       }
     }
+  }
+}
+
+.button {
+  background-color: #999;
+  border: none;
+  border-radius: $border-radius-default;
+  color: #444444;
+  font-family: 'OpenSans';
+  font-size: 12px;
+  outline: none;
+  padding: 8px 15px;
+  &.button-principal {
+    background-color: $principal-color;
+    color: $white-color;
   }
 }

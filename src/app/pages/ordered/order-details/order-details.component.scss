@@ -1,0 +1,221 @@
+@import '../../../../variables.scss';
+@import '../../../../mixins.scss';
+
+.card {
+  background-color: #fafafa;
+  &__body {
+    &.reset-pb { padding-bottom: 15px; }
+    // Best sellers card
+    &--list-products {
+      .item {
+        margin-bottom: 15px;
+        &:first-child {
+          margin-top: 25px;
+        }
+        &__image {
+          &--wrapper {
+            border: 1px solid #ececec;
+            border-radius: $border-radius-default;
+            height: 80px;
+            overflow: hidden;
+            width: 80px;
+            @include centralizedFlex(center, center);
+            img {
+              width: 100%;
+            }
+          }
+        }
+        &__name {
+          @include centralizedFlex(center);
+          h1 {
+            color: #888888;
+            font-family: 'Antonio';
+            font-size: 20px;
+            font-weight: 300;
+            margin: 0px;
+            margin-left: 10px;
+          }
+        }
+        &__price {
+          @include centralizedFlex(center);
+          h1 {
+            color: #444444;
+            font-family: 'Antonio';
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0px;
+            text-align: right;
+            width: 100%;
+          }
+        }
+      }
+      .total-value {
+        border-top: 1px solid #ced4da;
+        font-family: 'Antonio';
+        padding-right: 15px;
+        text-transform: uppercase;
+        @include centralizedFlex(center, flex-end);
+        .total {
+          color: #888888;
+          display: inherit;
+          font-size: 22px;
+          margin: 0px;
+          padding-top: 15px;
+        }
+        .value {
+          color: #444444;
+          font-size: 22px;
+          font-weight: bold;
+          margin: 0px;
+          margin-left: 8px;
+        }
+      }
+    }
+    // Financial card
+    &--balance {
+      margin-bottom: 20px;
+      p {
+        color: #888888;
+        font-family: 'OpenSans';
+        font-size: 12px;
+        margin: 0px;
+        margin-top: 20px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      h3 {
+        color: #444444;
+        font-family: 'Antonio';
+        font-size: 45px;
+        font-weight: bold;
+        margin: 0px;
+        text-align: center;
+      }
+    }
+    &--credits {
+      background-color: #f7f5f5;
+      margin-bottom: -20px;
+      margin-left: -15px;
+      margin-right: -15px;
+      padding: 10px;
+      .title {
+        color: #888888;
+        font-family: 'OpenSans';
+        font-size: 12px;
+        margin: 0px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .row {
+        .release-date, .value {
+          p {
+            color: #888888;
+            font-family: 'OpenSans';
+            font-size: 10px;
+            font-weight: bold;
+            margin: 0px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+          }
+          h6 {
+            color: #888888;
+            font-family: 'Antonio';
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0px;
+            margin-bottom: 12px;
+          }
+        }
+        .release-date {
+          text-align: right;
+          h6 {
+            font-weight: 300;
+          }
+        }
+        .value {
+          text-align: left;
+        }
+      }
+    }
+    // Views vs Shopping
+    &--graph {
+      .form-group {
+        margin: auto;
+        padding: 20px 0px;
+        width: 180px;
+        @include centralizedFlex(center, center);
+        select {
+          border: 1px solid #e8e8e8;
+          border-radius: $border-radius-default;
+          color: #888888;
+          font-size: 12px;
+          height: 40px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  &.and-table {
+    .card-body {
+      padding: 20px;
+      padding-bottom: 50px;
+      .table {
+        tbody {
+          tr {
+            border: none;
+            &:hover {
+              box-shadow: initial;
+            }
+            td {
+              .flag {
+                color: $principal-color;
+                font-family: 'Antonio';
+                font-size: 20px;
+                @include centralizedFlex(center);
+                &__container {
+                  background-color: $principal-color;
+                  color: $white-color;
+                  font-size: 16px;
+                  margin-right: 20px;
+                  padding: 10px;
+                  position: relative;
+                  text-transform: uppercase;
+                  &:before {
+                    border-bottom: 20px solid transparent;
+                    border-left: 14px solid $principal-color;
+                    border-top: 24px solid transparent;
+                    bottom: 0;
+                    content: '';
+                    height: 0px;
+                    position: absolute;
+                    right: -14px;
+                    top: 0;
+                    width: 0px;
+                  }
+                }
+              }
+              .details-btn {
+                background: $transparent;
+                border: 1px solid $principal-color;
+                border-radius: $border-radius-default;
+                color: $principal-color;
+                cursor: pointer;
+                font-size: 12px;
+                outline: none;
+                padding: 10px 20px;
+                text-transform: uppercase;
+                transition: all ease .2s;
+                &:hover {
+                  background-color: $principal-color;
+                  color: $white-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

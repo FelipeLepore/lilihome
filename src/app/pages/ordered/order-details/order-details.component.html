@@ -1,3 +1,167 @@
-<p>
-  order-details works!
-</p>
+<title-component title="DETALHES DO PEDIDO Nº 123456789"></title-component>
+
+<div class="row">
+  <div class="col-md-8">
+    <div class="card">
+      <div class="card__body reset-pb">
+        <div class="card__body--title">
+          <h3>Pagamento</h3>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-5">
+            <div class="card__body--formgroup">
+              <label>Status de consolidação</label>
+              <input type="text" class="form-control" value="Efetivado" readonly>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="card__body--formgroup">
+              <label>Cartão de crédito</label>
+              <input type="text" class="form-control" value="**** **** **** 1234" readonly>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card__body reset-pb">
+        <div class="card__body--title">
+          <h3>Tempo de produção</h3>
+        </div>
+        <div class="card__body--balance">
+          <p>Data estimada</p>
+          <h3>01 Mar 2018</h3>
+        </div>
+        <div class="card__body--formgroup">
+          <label>Alterar data estimada</label>
+          <div class="form-group">
+            <select class="custom-select" required>
+              <option value=""></option>
+              <option value="1">Itaú</option>
+              <option value="2">Santander</option>
+              <option value="3">Nubank</option>
+            </select>
+            <div class="invalid-feedback">Example invalid custom select feedback</div>
+          </div>
+        </div>
+        <button class="button button-principal" type="button">Salvar nova data</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="card">
+      <div class="card__body reset-pb">
+        <div class="card__body--title">
+          <h3>Lista de produtos</h3>
+        </div>
+        <div class="card__body--list-products">
+          <div class="item row" *ngFor="let data of productsListMock">
+            <div class="item__image col-md-2">
+              <div class="item__image--wrapper">
+                <img [src]="data.image" alt="">
+              </div>
+            </div>
+            <div class="item__name col-md-7">
+              <h1>{{data.name}}</h1>
+            </div>
+            <div class="item__price col-md-3">
+              <h1>{{data.price}}</h1>
+            </div>
+          </div>
+          <div class="row total-value">
+            <h1 class="total">Total <h1 class="value">R$40.259,97</h1></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card__body reset-pb">
+        <div class="card__body--title">
+          <h3>Status pedido</h3>
+        </div>
+        <div class="card__body--balance">
+          <p>Último status</p>
+          <h3>Em trânsito</h3>
+        </div>
+        <div class="card__body--formgroup">
+          <label>Adicionar novo status</label>
+          <div class="form-group">
+            <select class="custom-select" required>
+              <option value=""></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <div class="invalid-feedback">Example invalid custom select feedback</div>
+          </div>
+        </div>
+        <div class="card__body--credits">
+          <p class="title">Histórico</p>
+          <div class="row">
+            <div class="col-md-6 release-date">
+              <p>Data</p>
+              <h6>25 FEV 2018</h6>
+              <h6>30 MAR 2018</h6>
+              <h6>30 MAR 2018</h6>
+            </div>
+            <div class="col-md-6 value">
+              <p>Status</p>
+              <h6>Em preparação</h6>
+              <h6>Pagamento confirmado</h6>
+              <h6>Processando pagamento</h6>
+            </div>
+          </div>
+        </div>
+        <button class="button button-principal" type="button">Salvar nova status</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="card">
+      <div class="card__body reset-pb">
+        <div class="card__body--title">
+          <h3>Cancelamento de pedido</h3>
+        </div>
+        <div class="card__body--formgroup">
+          <div class="form-group">
+            <textarea rows="4"></textarea>
+            <div class="invalid-feedback">Example invalid custom select feedback</div>
+          </div>
+        </div>
+        <button type="button" class="button button-principal">Devolver pedido</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="card">
+      <div class="card__body reset-pb">
+        <div class="card__body--title">
+          <h3>Devolução de produto</h3>
+        </div>
+        <div class="card__body--formgroup">
+          <label>Item do pedido a ser devolvido</label>
+          <div class="form-group">
+            <select class="custom-select" required>
+              <option value=""></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <div class="invalid-feedback">Example invalid custom select feedback</div>
+          </div>
+        </div>
+        <div class="card__body--formgroup">
+          <div class="form-group">
+            <textarea rows="4"></textarea>
+            <div class="invalid-feedback">Example invalid custom select feedback</div>
+          </div>
+        </div>
+        <button type="button" class="button button-principal">Devolver pedido</button>
+      </div>
+    </div>
+  </div>
+</div>

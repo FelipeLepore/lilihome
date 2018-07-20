@@ -1,3 +1,4 @@
+import { OrderDetailsComponent } from './pages/ordered/order-details/order-details.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes, Router } from '@angular/router';
@@ -11,7 +12,11 @@ import { OrderedComponent } from './pages/ordered/ordered.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'profile', component: ProfileComponent },
-  { path: 'ordered', component: OrderedComponent },
+  { path: 'ordered', component: OrderedComponent,
+    children: [
+      { path: 'order-details', component: OrderDetailsComponent }
+    ]
+  },
   { path: 'financial', component: FinancialComponent },
   { path: 'payments', component: PaymentsComponent },
   { path: 'stock', component: StockComponent },
