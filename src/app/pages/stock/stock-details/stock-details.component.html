@@ -1,4 +1,4 @@
-<title-component title="ESTOQUE" [showFilters]="true"></title-component>
+<title-component title="DETALHES DO PRODUTO CADEIRA BARCELONA"></title-component>
 <div class="table-responsive">
   <table class="table">
     <thead>
@@ -27,9 +27,6 @@
         <th scope="col">Qtd.
           <img src="assets/icons/ICON_seta_baixo.svg" alt="">
         </th>
-        <th scope="col">Total
-          <img src="assets/icons/ICON_seta_baixo.svg" alt="">
-        </th>
         <th scope="col"></th>
       </tr>
     </thead>
@@ -52,18 +49,14 @@
         <td>1234</td>
         <td>
           <div class="product">
-            <div class="product__image">
-              <img src="http://marcheartdevie.com.br/shop/6102-large_default/CADEIRA-MACCHIATO.jpg" alt="">
-            </div>
             <div class="product__name">
-              Lorem ipsum dolor sit amet
+              Cadeira barcelona
             </div>
           </div>
         </td>
-        <td>2</td>
-        <td>R$2.500,00</td>
+        <td>206</td>
         <td>
-          <button class="see" routerLink="stock-details">Ver</button>
+          <button class="see">Ver</button>
         </td>
       </tr>
       <tr>
@@ -84,22 +77,48 @@
         <td>1234</td>
         <td>
           <div class="product">
+            <div class="product__box"></div>
             <div class="product__image">
               <img src="http://marcheartdevie.com.br/shop/6102-large_default/CADEIRA-MACCHIATO.jpg" alt="">
             </div>
             <div class="product__name">
-              Lorem ipsum dolor sit amet
+              Vermelha
             </div>
           </div>
         </td>
         <td>2</td>
-        <td>R$2.500,00</td>
+        <td></td>
+      </tr>
+      <tr>
         <td>
-          <button class="see">Ver</button>
+          <input type="checkbox" name="" id="">
         </td>
+        <td>
+          <ngx-toggle
+            onColor="{{model.onColor}}"
+            onText="{{model.onText}}"
+            offColor="{{model.offColor}}"
+            offText="{{model.offText}}"
+            [disabled]="model.disabled"
+            [size]="model.size"
+            [(value)]="model.value">
+          </ngx-toggle>
+        </td>
+        <td>1234</td>
+        <td>
+          <div class="product">
+            <div class="product__box"></div>
+            <div class="product__image">
+              <img src="http://marcheartdevie.com.br/shop/6102-large_default/CADEIRA-MACCHIATO.jpg" alt="">
+            </div>
+            <div class="product__name">
+              Azul
+            </div>
+          </div>
+        </td>
+        <td>2</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
 </div>
-
-<router-outlet></router-outlet>

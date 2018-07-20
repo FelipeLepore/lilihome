@@ -15,6 +15,7 @@ import { PaymentsComponent } from './pages/payments/payments.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { TitleComponent } from './components/title/title.component';
 import { OrderDetailsComponent } from './pages/ordered/order-details/order-details.component';
+import { StockDetailsComponent } from './pages/stock/stock-details/stock-details.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { OrderDetailsComponent } from './pages/ordered/order-details/order-detai
     PaymentsComponent,
     BreadcrumbComponent,
     TitleComponent,
-    OrderDetailsComponent
+    OrderDetailsComponent,
+    StockDetailsComponent
   ],
   imports: [
     BrowserModule,

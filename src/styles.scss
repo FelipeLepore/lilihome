@@ -105,6 +105,13 @@ $transparent: transparent;
         }
         .product {
           @include centralizedFlex(center);
+          &__box {
+            border-bottom: 1px solid #878787;
+            border-left: 1px solid #878787;
+            height: 18px;
+            margin-right: 10px;
+            width: 18px;
+          }
           &__image {
             border: 1px solid #ececec;
             border-radius: $border-radius-default;

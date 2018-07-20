@@ -1,3 +1,4 @@
+import { StockDetailsComponent } from './pages/stock/stock-details/stock-details.component';
 import { OrderDetailsComponent } from './pages/ordered/order-details/order-details.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -19,7 +20,11 @@ const routes: Routes = [
   },
   { path: 'financial', component: FinancialComponent },
   { path: 'payments', component: PaymentsComponent },
-  { path: 'stock', component: StockComponent },
+  { path: 'stock', component: StockComponent,
+    children: [
+      { path: 'stock-details', component: StockDetailsComponent }
+    ]
+  },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 
