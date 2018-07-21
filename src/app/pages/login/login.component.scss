@@ -1,0 +1,48 @@
+@import '../../../variables.scss';
+@import '../../../mixins.scss';
+
+.login {
+  height: 100vh;
+  background-image: url('../../../assets/imgs/bg.jpg');
+  background-position: center;
+  background-size: 100%;
+  font-family: 'OpenSans';
+  width: 100vh;
+  @include centralizedFlex(center, center);
+  .login-area {
+    @include centralizedFlex(center, center, column);
+    img {
+      margin-bottom: 50px;
+    }
+    input {
+      background-color: $transparent;
+      border: none;
+      border-bottom: 1px solid #444444;
+      border-radius: 0px;
+      color: #444444;
+      font-size: 12px;
+      margin-bottom: 25px;
+      width: 100%;
+    }
+    .submit {
+      background-color: #004439;
+      border: none;
+      border-radius: $border-radius-default;
+      color: $white-color;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 15px 0px;
+      text-transform: uppercase;
+      width: 100%;
+    }
+    .rememberpass {
+      background-color: $transparent;
+      border: none;
+      color: $white-color;
+      font-size: 12px;
+      margin-top: 15px;
+      text-decoration: underline;
+      width: 100%;
+    }
+  }
+}

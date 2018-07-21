@@ -10,6 +10,7 @@ import { StockComponent } from './pages/stock/stock.component';
 import { PaymentsComponent } from './pages/payments/payments.component';
 import { FinancialComponent } from './pages/financial/financial.component';
 import { OrderedComponent } from './pages/ordered/ordered.component';
+import { LoginComponent } from './pages/login/login.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -31,6 +32,7 @@ const routes: Routes = [
     ]
   },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
 ];
 
 @NgModule({
