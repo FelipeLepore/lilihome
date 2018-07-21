@@ -1,3 +1,4 @@
+import { ProductDataComponent } from './pages/stock/stock-details/product-data/product-data.component';
 import { StockDetailsComponent } from './pages/stock/stock-details/stock-details.component';
 import { OrderDetailsComponent } from './pages/ordered/order-details/order-details.component';
 import { NgModule } from '@angular/core';
@@ -22,7 +23,11 @@ const routes: Routes = [
   { path: 'payments', component: PaymentsComponent },
   { path: 'stock', component: StockComponent,
     children: [
-      { path: 'stock-details', component: StockDetailsComponent }
+      { path: 'stock-details', component: StockDetailsComponent,
+        children: [
+          { path: 'product-data', component: ProductDataComponent }
+        ]
+      }
     ]
   },
   { path: '', redirectTo: '/home', pathMatch: 'full' },

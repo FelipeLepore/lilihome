@@ -1,0 +1,44 @@
+@import '../../../../../variables.scss';
+@import '../../../../../mixins.scss';
+
+.card-body {
+  background-color: #fafafa;
+}
+.card {
+  &__body {
+    background-color: #fafafa;
+    &--formgroup {
+      textarea {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+      }
+    }
+  }
+}
+
+.title-models {
+  font-size: 12px;
+  padding: 10px;
+  position: relative;
+  @include centralizedFlex(center, center);
+  &:before {
+    background-color: #c1c1c1;
+    content: '';
+    height: 1px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 100%;
+  }
+  p {
+    background-color: $background-color;
+    color: #888888;
+    margin: 0px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 80px;
+    z-index: 1;
+  }
+}

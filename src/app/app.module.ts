@@ -16,6 +16,8 @@ import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.componen
 import { TitleComponent } from './components/title/title.component';
 import { OrderDetailsComponent } from './pages/ordered/order-details/order-details.component';
 import { StockDetailsComponent } from './pages/stock/stock-details/stock-details.component';
+import { LoginComponent } from './pages/login/login.component';
+import { ProductDataComponent } from './pages/stock/stock-details/product-data/product-data.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { StockDetailsComponent } from './pages/stock/stock-details/stock-details
     BreadcrumbComponent,
     TitleComponent,
     OrderDetailsComponent,
-    StockDetailsComponent
+    StockDetailsComponent,
+    LoginComponent,
+    ProductDataComponent
   ],
   imports: [
     BrowserModule,
