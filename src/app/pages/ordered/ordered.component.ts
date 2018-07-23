@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { BreadcrumbService } from '../../shared/breadcrumb.service';
 
 @Component({
   selector: 'app-ordered',
@@ -8,10 +7,9 @@ import { BreadcrumbService } from '../../shared/breadcrumb.service';
 })
 export class OrderedComponent implements OnInit {
 
-  constructor(private breadCrumb: BreadcrumbService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.breadCrumb.title.next('PEDIDOS');
   }
 
 }

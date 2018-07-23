@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BreadcrumbService } from './../../../shared/breadcrumb.service';
+import { BreadcrumbService } from '../../../shared/breadcrumb.service';
 
 @Component({
   selector: 'app-order-details',
